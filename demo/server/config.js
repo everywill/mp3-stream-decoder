@@ -1,0 +1,1 @@
+exports.media_dir = 'public/media'
