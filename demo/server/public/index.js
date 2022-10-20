@@ -1,5 +1,5 @@
 (() => {
-  // bin/webassembly_Release/LameDecoder.js
+  // lib/index.js
   var Module = (() => {
     var _scriptDir = typeof document !== "undefined" && document.currentScript ? document.currentScript.src : void 0;
     return function(Module2) {
@@ -2007,8 +2007,6 @@
     };
   })();
   var LameDecoder_default = Module;
-
-  // src/utils.js
   function loadWasm(url) {
     return new Promise(function(resolve, reject) {
       const wasmXHR = new XMLHttpRequest();
@@ -2023,8 +2021,6 @@
       wasmXHR.send(null);
     });
   }
-
-  // src/index.js
   var WasmLoader = class {
     module;
     async LoadWasm() {

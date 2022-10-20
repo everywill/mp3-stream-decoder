@@ -2,12 +2,13 @@
   "name": "mp3-stream-decoder",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/index.js --format=esm --bundle --outdir=lib && cp bin/webassembly_Release/LameDecoder.wasm lib/LameDecoder.wasm",
     "dev": "node demo/server/app.js & esbuild demo/src/index.js --bundle --watch --outdir=demo/server/public"
   },
   "author": "",

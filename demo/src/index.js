@@ -1,4 +1,4 @@
-import { Mp3Decoder } from "../../src/index.js";
+import { Mp3Decoder } from "../../lib/index.js";
 import { FUPCMPlayer } from "./pcm_player.js";
 import { connect } from './websocket_connection.js';
 
